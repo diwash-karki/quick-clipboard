@@ -10,6 +10,10 @@
     "package": "plasmo package"
   },
   "dependencies": {
+    "@plasmohq/storage": "^1.15.0",
+    "framer-motion": "^12.34.0",
+    "lucide-react": "^0.564.0",
+    "luxon": "^3.7.2",
     "plasmo": "0.90.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -24,8 +28,15 @@
     "typescript": "5.3.3"
   },
   "manifest": {
+    "permissions": [
+      "storage",
+      "clipboardRead",
+      "clipboardWrite",
+      "contextMenus"
+    ],
     "host_permissions": [
-      "https://*/*"
+      "https://*/*",
+      "http://*/*"
     ]
   }
 }
